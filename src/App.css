@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  width: 100%;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background: rgb(204, 206, 217);
+  background: linear-gradient(
+    132deg,
+    rgba(204, 206, 217, 1) 0%,
+    rgba(157, 160, 168, 1) 100%
+  );
 }
 
-.App-link {
-  color: #61dafb;
+.main-area {
+  position: relative;
+  background: rgb(19, 19, 19);
+  background: rgb(28, 31, 40);
+  background: rgb(28, 31, 40);
+  background: linear-gradient(
+    313deg,
+    rgba(28, 31, 40, 1) 0%,
+    rgba(62, 65, 75, 1) 100%
+  );
+  height: 600px;
+  width: auto;
+  max-width: 318px;
+  border-radius: 30px;
+  padding: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  border: 0;
+  height: 175px;
+  width: 100%;
+  background: transparent;
+  text-align: right;
+  color: #fbfafb;
+  font-size: 60px;
+  font-weight: 300;
+}
+:focus {
+  outline: none;
+}
+
+.button-area {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  height: auto;
+}
+
+.btn {
+  width: 66px;
+  height: 66px;
+  margin: 2px;
+  border: 0;
+  border-radius: 22px;
+  cursor: pointer;
+  color: #eaeaec;
+  font-size: 22px;
+}
+
+button.zero {
+  width: 138px;
+}
+
+.orange {
+  background: rgba(229, 119, 1);
+  background: linear-gradient(
+    318deg,
+    rgba(229, 119, 1, 1) 57%,
+    rgba(203, 91, 11, 1) 100%
+  );
+  box-shadow: inset 2px 2px 5px #e57701e8,
+    inset -2px -2px 5px rgba(203, 91, 11, 1),
+    inset 2px 2px 5px rgba(229, 119, 1, 0.908), inset -2px -2px 5px #cb5b0b;
+}
+
+.gray {
+  background: rgb(90, 97, 111);
+  background: linear-gradient(
+    340deg,
+    rgba(90, 97, 111, 1) 0%,
+    rgba(65, 70, 82, 1) 100%
+  );
+  box-shadow: inset 2px 2px 5px rgb(90, 97, 111),
+    inset -2px -2px 5px rgba(65, 70, 82, 1), inset 2px 2px 5px rgb(90, 97, 111),
+    inset -2px -2px 5px rgba(65, 70, 82, 1);
+}
+
+.black {
+  background: rgb(62, 65, 75);
+  background: linear-gradient(
+    340deg,
+    rgba(62, 65, 75, 1) 0%,
+    rgba(34, 36, 40, 1) 100%
+  );
+  box-shadow: inset 2px 2px 5px rgb(69, 70, 77),
+    inset -2px -2px 5px rgba(34, 36, 40, 1), inset 2px 2px 5px rgb(69, 70, 77),
+    inset -2px -2px 5px rgba(34, 36, 40, 1);
+}
+
+.author {
+  position: absolute;
+  bottom: 20px;
+  left: 45%;
+  font-size: 17px;
+  color: #242730;
+  font-family: "Dancing Script", cursive;
 }
